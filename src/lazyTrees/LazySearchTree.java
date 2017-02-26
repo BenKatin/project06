@@ -165,7 +165,7 @@ public class LazySearchTree<E extends Comparable< ? super E > >
         else if ( compareResult > 0 )
             root.rtChild = remove(root.rtChild, x);
 
-            // found the node
+        // found the node
         else if (root.lftChild != null && root.rtChild != null)
         {
             root.data = findHardMin(root.rtChild).data;
