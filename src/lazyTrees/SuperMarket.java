@@ -27,7 +27,7 @@ public class SuperMarket
 	// The maximum number of items soft removed before calling collectGarbage()
 	// TODO: Test your implementation with varying number of items to be deleted
 	//       before calling garbage collection.
-	private static final int GARBAGE_COLLECTION_THRESHOLD = 4;
+	private static final int GARBAGE_COLLECTION_THRESHOLD = 2;
 
 	// Keeps track of the count of soft deleted item
 	private int countDeleted;
@@ -213,7 +213,7 @@ public class SuperMarket
 	public static void main(String[] args) 
 	{
 		// TODO: Tests the LazySearchTree by adding and removing items from the inventory
-		final String TESTFILE = "resources/inventory_log.txt";	// Directory path for plain-text file
+		final String TESTFILE = "resources/inventory_short.txt";	// Directory path for plain-text file
 
 		// NOTE: Short inventory file to test for removal of root node from LazySearchTree
 		//final String TESTFILE = "resources/inventory_short.txt";	
